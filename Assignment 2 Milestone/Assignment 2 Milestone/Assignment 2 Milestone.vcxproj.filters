@@ -21,12 +21,18 @@
     <ClCompile Include="StoryBase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SOUT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PlayerUData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StoryBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SOUT.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

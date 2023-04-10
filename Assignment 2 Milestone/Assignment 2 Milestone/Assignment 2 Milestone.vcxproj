@@ -128,10 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="SOUT.cpp" />
     <ClCompile Include="StoryBase.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PlayerUData.h" />
+    <ClInclude Include="SOUT.h" />
     <ClInclude Include="StoryBase.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

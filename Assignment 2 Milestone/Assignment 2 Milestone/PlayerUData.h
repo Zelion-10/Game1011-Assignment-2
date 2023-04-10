@@ -6,12 +6,12 @@ class PlayerDecision
 {
 private:
 
-	
 
 
 
 public:
 
+	
 	
 
 };
