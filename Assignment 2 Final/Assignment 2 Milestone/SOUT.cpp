@@ -16,9 +16,11 @@ void StoryOutcome::Bad()
 	Facts();
 
 	endingFile << "-------------[THE BAD ENDING]----------------" << endl;
-	endingFile << "Your memories return and you remember the events that happened that led to where you are." << endl;
-	endingFile << "Unable to cope with your past and the events that happened there," << endl;
-	endingFile << "You feel completely empty and run away. Your fate was unknown" << endl;
+	endingFile << "Winton becomes more and more consumed by revenge, and he starts ";
+	endingFile << "to lose sight of what's important. He gets into more trouble and ends ";
+	endingFile << "up in jail. You hear about his fate and feel guilty for not being able to help him more. ";
+	endingFile << "You vow to never get involved in other people's problems again." << endl;
+	endingFile << "---------------------------------------------" << endl;
 
 
 
@@ -35,54 +37,24 @@ void StoryOutcome::Good()
 	Facts();
 
 	endingFile << "-------------[THE GOOD ENDING]----------------" << endl;
-	endingFile << "Your memories return and you remember the events that happened that led to where you are." << endl;
-	endingFile << "You fall to your knees crying in sadness" << endl;
-	endingFile << "The officer comforts you and takes you to a hospital upon rescue" << endl;
-	endingFile << "Months after, you feel like you can move on from the events that transpired." << endl;
-
-
-
-
-	endingFile.close();
-};
-
-
-void StoryOutcome::TheWhat()
-{
-	ofstream endingFile("Story.txt");
-
-
-
-	Facts();
-
-	endingFile << "-------------[THE WHAT ENDING]----------------" << endl;
-	endingFile << "Your memories return and you remember the events that happened that led to where you are." << endl;
-	endingFile << "You fall to your knees crying in sadness" << endl;
-	endingFile << "The officer comforts you and takes you to a hospital upon rescue" << endl;
-	endingFile << "Months after, you feel like you can move on from the events that transpired." << endl;
-
+	endingFile << "After Winton turns his life around, he starts working hard and saving up money. He pays off his debt and starts a small business. He invites you to the grand opening of his new store, and you're proud to see how far he's come. He thanks you for your help and tells you that he couldn't have done it without you." << endl;
+	endingFile << "----------------------------------------------" << endl;
 
 
 
 	endingFile.close();
 };
+
 
 void StoryOutcome::Facts()
 {
 	ofstream endingFile("Story.txt");
 	endingFile << "--------------------------------[Story Background]----------------------------------------" << endl;
-	endingFile << "You find out that you are a survivor of a plane crash and you are one of the two survivors. You were an amnesiac" << endl;
-	endingFile << "You were hallucinating visions of your past and were seeing things that were not there" << endl;
-	endingFile << "----------------------------------------------------------------------------------------" << endl;
-	endingFile << "First Scenario: The man who was bleeding was the other survivor of the plane crash. It is unknown what happened to him" << endl;
-	endingFile << "" << endl;
-	endingFile << "Second Scenario: The girl you saw was your girlfriend. You enjoyed playing games together alot." << endl;
-	endingFile << "She was on the plane with you as you two wanted to go to Punta Cana for a vacation date. Unfortunately she didn't survive" << endl;
-	endingFile << "" << endl;
-	endingFile << "Third Scenario: The house was actually never there. It was a vision of your house that was burnt down in your past due to an arson. " << endl;
-	endingFile << "You were the child of a family that did not survive the fire. The children were your siblings  " << endl;
-	endingFile << "" << endl;
-	endingFile << "Final Scenario: The hooded figure was actually an officer, part of a rescue unit responding to the crash" << endl;
+	endingFile << "You run into Winton, an old friend, who tells you that he's in trouble. He borrowed money from some dangerous people and now they're threatening him. Winton begs you to help him out." << endl;
+	endingFile << "First Scenario: Winton's Dilemma" << endl;
+	endingFile << "Second Scenario: Seeking Help & Winton's Fate" << endl;
+	endingFile << "Third Scenario: Seeking Justice" << endl;
+	endingFile << "Final Scenario:  Winton's Redemption" << endl;
 	endingFile << "--------------------------------------------------------------------------------------------" << endl;
 
 	endingFile.close();

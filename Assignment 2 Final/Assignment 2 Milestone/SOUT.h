@@ -12,7 +12,7 @@ private:
 public:
 	static void Bad();
 	static void Good();
-	void TheWhat();
+	
 	static void Facts();
 
 

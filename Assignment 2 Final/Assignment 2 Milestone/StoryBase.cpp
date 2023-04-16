@@ -23,7 +23,7 @@ void StoryStart::startStory()
 
 	//Text File
 	ifstream storyFile;
-
+	
 	//Open the file
 	storyFile.open("Story.txt");
 
@@ -39,7 +39,7 @@ void StoryStart::startStory()
 		cout << "File opened successfully" << endl;
 	}
 
-
+	cout << "Previous Story: ";
 	//Story 
 	for (int i = 1; i <= 4; i++)
 	{
@@ -47,102 +47,138 @@ void StoryStart::startStory()
 		//First Scenario
 		if (i == 1)
 		{
-			cout << "----------------Scenario 1-----------------" << endl;
 			cout << line << endl;
+			cout << "----------------Scenario 1-----------------" << endl;
+			
+			cout << "You run into Winton, an old friend, who tells you that he's in trouble. He borrowed money from some dangerous people and now they're threatening him. Winton begs you to help him out." << endl;
 			cout << "-------------------------------------------" << endl;
-			cout << "Type One Of The Following" << endl;
-			cout << "1. Help Him" << endl;
-			cout << "2. Leave Him" << endl;
+			cout << " Do you help Winton or not?" << endl;
+			cout << "1. Help Winton" << endl;
+			cout << "2. Don't Help Winton" << endl;
 			cout << "-------------------------------------------" << endl;
 			getline(cin, command);
+			system("Pause");
 			system("CLS");
 
 			//IF statements for the choices
-			if (command == "1")
+			if (command == "1" or command == "Help Winton")
 			{
 				cout << "------------------------------------------------------------" << endl;
-				cout << "The man thanks you for your help and walks away" << endl;
+				cout << "You decide to help Winton out of his predicament. You know that it won't be easy, but you can't let your friend suffer." << endl;
 				cout << "------------------------------------------------------------" << endl;
 				//karmaCounter++;
 				karmaCount.setKarmaCounter(karmaCounter++);
 			}
 
-			else if (command == "2")
+			else if (command == "2" or command == "Don't Help Winton")
 			{
 				cout << "------------------------------------------------------------" << endl;
-				cout << "You hear him screaming in pain from a distance" << endl;
+				cout << "Too bad. He Makes You Help Him Anyway" << endl;
 				cout << "------------------------------------------------------------" << endl;
 				//karmaCounter--;
 				karmaCount.setKarmaCounter(karmaCounter--);
 			}
 
 		}
+		system("Pause");
+		system("CLS");
 
 		//Second Scenario
 		if (i == 2)
 		{
 			cout << "-----------------[Scenario 2]----------------" << endl;
 			cout << line << endl;
+			cout << "Winton needs to pay off the debt, but he doesn't have the money. He suggests that the two of you rob a bank to get the cash. You're not sure if it's a good idea, but you're willing to hear him out." << endl;
+			cout << "-------------------------------------------" << endl;
 			
 			cout << "Type One Of The Following" << endl;
-			cout << "Talk to her" << endl;
-			cout << "Pass by" << endl;
+			cout << "1. Agree to Rob the Bank" << endl;
+			cout << "2. Disagree to Rob the Bank" << endl;
+			cout << "3.Don't Help Winton" << endl;
 			cout << "-------------------------------------------" << endl;
 			getline(cin, command);
+			system("Pause");
 			system("CLS");
-			if (command == "1")
+			if (command == "1" or command == "Agree to Rob the Bank")
 			{
 				cout << "------------------------------------------------------------" << endl;
-				cout << "The girl vanishes. Turns out she was holding your precious video game. You feel nostalgia and sorrow. " << endl;
+				cout << "You decide to go along with Winton's plan. You both plan out the robbery and execute it flawlessly. You get away with the money and give Winton his share. He thanks you for your help and promises to pay you back as soon as he can. " << endl;
 				cout << "------------------------------------------------------------" << endl;
 				//karmaCounter++;
 				karmaCount.setKarmaCounter(karmaCounter++);
 			}
 
-			else if (command == "2")
+			else if (command == "2" or command=="Disagree to Rob the Bank")
 			{
 				cout << "------------------------------------------------------------" << endl;
-				cout << "She screams at you from a distance 'It is all your fault!' and disappears. You feel guilt" << endl;
+				cout << "You don't feel comfortable with the idea of robbing a bank, and you tell Winton that you can't help him. He pleads with you, but you stand firm. Winton leaves, disappointed, but you feel like you made the right decision." << endl;
 				cout << "------------------------------------------------------------" << endl;
 				//karmaCounter--;
 				karmaCount.setKarmaCounter(karmaCounter--);
 			}
+
+			else if (command == "3" or command == "Don't Help Winton")
+			{
+				cout << "------------------------------------------------------------" << endl;
+				cout << "As much as you want to help Winton, you know that getting involved in his problems could put you in danger. You decide that it's best to stay out of it." << endl;
+				cout << "------------------------------------------------------------" << endl;
+				//karmaCounter--;
+				karmaCount.setKarmaCounter(karmaCounter--);
+			}
+			
 		}
+		system("Pause");
+		system("CLS");
+		cout << "Days pass, and you haven't heard from Winton. You begin to worry about his safety. You decide to check up on Winton to make sure he's okay. When you visit him, you find out that he was beaten up by the people he owed money to. He's in bad shape, and he needs your help." << endl;
+		system("Pause");
+		system("CLS");
+		
 
 		//Third Scenario
 		if (i == 3)
 		{
 			cout << "----------------[Scenario 3]------------------" << endl;
 			cout << line << endl;
+			cout << "Winton tells you that he wants to get revenge on the people who hurt him. He asks for your help in tracking them down." << endl;
 			cout << "-------------------------------------------" << endl;
 			cout << "Type One Of The Following" << endl;
-			cout << "1. Enter House" << endl;
-			cout << "2. Run Away" << endl;
+			cout << "1. Help Winton Seek Revenge" << endl;
+			cout << "2. Refuse to Help Seek Revenge" << endl;
+			cout << "3. Refuse to Get Involved" << endl;
 			cout << "-------------------------------------------" << endl;
 			getline(cin, command);
+			system("Pause");
 			system("CLS");
 
 
-			if (command == "1")
+			if (command == "1" or command == "Help Winton Seek Revenge")
 			{
 				cout << "------------------------------------------------------------" << endl;
-				cout << "Turns out it was children just playing. And they disappear " << endl;
-				cout << "You notice this is actually a burnt out house. You find a picture frame of what it looks like a family." << endl;
-				cout << "The frame is completely shattered to make out the faces" << endl;
-				cout << "You hear something vanish from a distance after leaving" << endl;
+				cout << "You agree to help Winton seek revenge. Together, you track down the people who hurt him and get your revenge. Winton is grateful for your help, but you can't help but feel uneasy about what you did." << endl;
+				
 				cout << "------------------------------------------------------------" << endl;
 				karmaCount.setKarmaCounter(karmaCounter++);
 			}
 
-			else if (command == "2")
+			else if (command == "2" or command == "Refuse to Help Seek Revenge")
 			{
 				cout << "------------------------------------------------------------" << endl;
-				cout << "You fear of your own safety and run away. You can hear voices but can't make them out" << endl;
+				cout << "You don't believe that revenge is the right course of action. You tell Winton that you can't help him and try to convince him to let it go. He's angry with you, but you know that you made the right decision. " << endl;
+
+				cout << "------------------------------------------------------------" << endl;
+				karmaCount.setKarmaCounter(karmaCounter++);
+			}
+
+			else if (command == "3" or command == "Refuse to Get Involved")
+			{
+				cout << "------------------------------------------------------------" << endl;
+				cout << "You decide that it's best to stay out of Winton's problems. You hope that he'll be okay on his own." << endl;
 				cout << "------------------------------------------------------------" << endl;
 				karmaCount.setKarmaCounter(karmaCounter--);
 			}
 		}
-
+		system("Pause");
+		system("CLS");
 
 
 
@@ -151,33 +187,38 @@ void StoryStart::startStory()
 		{
 			cout << "----------------[Scenario 4]-----------------" << endl;
 			cout << line << endl;
+			cout << "Months pass, and you haven't seen or heard from Winton. You assume that he's moved on and forgotten about the whole ordeal." << endl;
 			cout << "-------------------------------------------" << endl;
 			cout << "Type One Of The Following" << endl;
-			cout << "1. Attack it" << endl;
-			cout << "2. Run back to the forest" << endl;
+			cout << "1. Run into Winton" << endl;
+			cout << "2. Never See Winton Again" << endl;
 			cout << "-------------------------------------------" << endl;
 			getline(cin, command);
+			system("Pause");
 			system("CLS");
 
-			if (command == "1")
+			if (command == "1" or command == "Run into Winton")
 			{
 				cout << "------------------------------------------------------------" << endl;
-				cout << "The figure falls down and coughs up blood. You feel victorious but at the same time empty" << endl;
+				cout << "You run into Winton on the street one day. He looks different, healthier, and happier. He tells you that he's turned his life around and is doing much better. He thanks you for your help and apologizes for dragging you into his problems." << endl;
 				cout << "------------------------------------------------------------" << endl;
 				karmaCount.setKarmaCounter(karmaCounter = -10);
 			}
 
-			else if (command == "2")
+			else if (command == "2" or command == "Never See Winton Again")
 			{
 				cout << "------------------------------------------------------------" << endl;
-				cout << "You trip and the hooded figure seemingly captures you. You scream in a cry for help" << endl;
+				cout << "You never run into Winton again. You hope that he's doing well and that he's moved on from the difficulties he faced. You're glad that you made the decisions that you did, and you hope that you helped him in some small way." << endl;
 				cout << "------------------------------------------------------------" << endl;
 				karmaCount.setKarmaCounter(karmaCounter++);
 			}
 		}
 
 
+
 	}
+	system("Pause");
+	system("CLS");
 
 	//After going through the four scenarios
 	cout << "Ending File created. View it to see your ending and other information of the story." << endl;
@@ -195,12 +236,6 @@ void StoryStart::startStory()
 		storyEnd.Bad();
 	}
 	
-	//Print Story The What End
-	else if (karmaCounter == -1)
-	{
-		storyEnd.TheWhat();
-	}
-	\
 	//Close the story file after iteration
 	storyFile.close();
 }
