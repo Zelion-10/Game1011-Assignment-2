@@ -47,7 +47,7 @@ void StoryStart::startStory()
 		//First Scenario
 		if (i == 1)
 		{
-			cout << line << endl;
+			//cout << line << endl;
 			cout << "----------------Scenario 1-----------------" << endl;
 			
 			cout << "You run into Winton, an old friend, who tells you that he's in trouble. He borrowed money from some dangerous people and now they're threatening him. Winton begs you to help him out." << endl;
