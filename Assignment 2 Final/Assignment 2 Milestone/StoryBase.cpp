@@ -39,11 +39,11 @@ void StoryStart::startStory()
 		cout << "File opened successfully" << endl;
 	}
 
-	cout << "Previous Story: ";
+	//cout << "Previous Story: ";
 	//Story 
 	for (int i = 1; i <= 4; i++)
 	{
-		getline(storyFile, line);
+	//	getline(storyFile, line);
 		//First Scenario
 		if (i == 1)
 		{
