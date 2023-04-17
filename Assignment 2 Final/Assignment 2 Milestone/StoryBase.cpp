@@ -80,8 +80,7 @@ void StoryStart::startStory()
 			}
 
 		}
-		system("Pause");
-		system("CLS");
+		
 
 		//Second Scenario
 		if (i == 2)
@@ -125,13 +124,14 @@ void StoryStart::startStory()
 				//karmaCounter--;
 				karmaCount.setKarmaCounter(karmaCounter--);
 			}
+			cout << " " << endl;
+
+			cout << "Days pass, and you haven't heard from Winton. You begin to worry about his safety. You decide to check up on Winton to make sure he's okay. When you visit him, you find out that he was beaten up by the people he owed money to. He's in bad shape, and he needs your help." << endl;
+			system("Pause");
+			system("CLS");
 			
 		}
-		system("Pause");
-		system("CLS");
-		cout << "Days pass, and you haven't heard from Winton. You begin to worry about his safety. You decide to check up on Winton to make sure he's okay. When you visit him, you find out that he was beaten up by the people he owed money to. He's in bad shape, and he needs your help." << endl;
-		system("Pause");
-		system("CLS");
+	
 		
 
 		//Third Scenario
@@ -177,9 +177,7 @@ void StoryStart::startStory()
 				karmaCount.setKarmaCounter(karmaCounter--);
 			}
 		}
-		system("Pause");
-		system("CLS");
-
+		
 
 
 		//Final Scenario
@@ -217,8 +215,7 @@ void StoryStart::startStory()
 
 
 	}
-	system("Pause");
-	system("CLS");
+	
 
 	//After going through the four scenarios
 	cout << "Ending File created. View it to see your ending and other information of the story." << endl;
